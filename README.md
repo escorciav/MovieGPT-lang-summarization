@@ -1,2 +1,2 @@
-# MovieGT-lang-summarization
+# MovieGPT-lang-summarization
 LLM Summarization for MovieGPT
