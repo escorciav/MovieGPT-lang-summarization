@@ -13,6 +13,10 @@ Implement an interface to collect LLM summaries using
   
   - ~~[Chains in langchain](https://docs.langchain.com/docs/components/chains/index_related_chains) circumvent 4k token limit.~~
 
+  - Play with longer diarized data, and davinci-turbo.
+
+  - Quick-trial: try to hook up [HuggingFace Hub: T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html), or [Llama](https://python.langchain.com/en/latest/modules/models/llms/integrations/llamacpp.html)
+
 ### 2. PG:Playground at small scale
 
 - Visualization tool? for insecting 10-100s summaries.
