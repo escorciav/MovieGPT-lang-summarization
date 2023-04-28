@@ -1,0 +1,16 @@
+"""Simple config bootstrapt
+
+DO NOT
+- commit passwords or API keys
+- Add hacks around sys.path.append here (keep 💩 with for yourself)
+"""
+import os
+import openai
+
+# Set environment variable with OpenAI API key
+os.environ["OPENAI_API_KEY"] = "sk-xxxxxxxx"
+
+# Set organization ID
+openai.organization = "org-xxxxxxxx"
+openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.Model.list()

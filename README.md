@@ -1,4 +1,5 @@
 # MovieGPT-lang-summarization
+
 LLM Summarization for MovieGPT
 
 ## TODO
@@ -7,36 +8,54 @@ LLM Summarization for MovieGPT
 
 Implement an interface to collect LLM summaries using
 
-1. WIP: GPT3
+1. Play with a dialog with `1EuwzHn9JEM.csv`
 
-  - ~~notebook example~~
-  
-  - ~~[Chains in langchain](https://docs.langchain.com/docs/components/chains/index_related_chains) circumvent 4k token limit.~~
+  1. Update notebook to use gpt-3.5-turbo
 
-  - Play with longer diarized data, and davinci-turbo.
+  1. Play with prompts:
 
-  - Quick-trial: try to hook up [HuggingFace Hub: T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html), or [Llama](https://python.langchain.com/en/latest/modules/models/llms/integrations/llamacpp.html)
+      - "-/engaging"
+
+      - "movie summary/plot/trailer", "movie plot summary"
+
+      - steer the length: "with 300 words"
+
+_Questions_
+
+1. How to circumvent 4k token limit?
+
+    [langchain](https://python.langchain.com/en/latest/index.html).
 
 ### 2. PG:Playground at small scale
 
-- Visualization tool? for insecting 10-100s summaries.
+_Scope: Get ETA & ETP for 12k videos._
 
-- Get ETA for 12k videos?
+1. Play with a small subset of the data (e.g., 100 videos) to get a sense of the interface.
+
+1. Dispatch bulk summarization jobs to LLM.
 
 ## Inbox
 
-### Scope 1: Better/Cheaper? summarization pipelines
+1. [HuggingFace (e.g., T5)](https://huggingface.co/docs/transformers/tasks/summarization).
 
-1. ChatGPT
+  _Added: 2023-04-?_
 
-  - Pro: Prompt engineering in the browser.
-  Over there, the results retained the "<>".
-  
-    BTW, Retaining the <> is irrelevant if they are not accurate.
-    Isn't it easier to desinging a matching module from summary to raw than come up with such prompt?
-    By doing so, we could finetune GPT3 😉
+  - [LangChain with HF-T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html)
 
-2. [HuggingFace (e.g., T5)](https://huggingface.co/docs/transformers/tasks/summarization), other tools [suggested by PIs](assets/ai-as-pi.md)
+    _Added: 2023-04-18_
 
-3. Look into any of the public project of [GPT3 project/plugin universe]().
-  For examples, [arxiv summarize]().
+1. [LangChain and LlamaCpp](https://python.langchain.com/en/latest/modules/models/llms/integrations/llamacpp.html)
+
+  _Added: 2023-04-18_
+
+1. Try other tools [suggested by PIs](assets/ai-as-pi.md)
+
+  _Added: 2023-04-?_
+
+1. Check ChatGPT
+
+  _Added: 2023-04-?_
+
+1. Look into any of the public project of [GPT3 project/plugin universe](). For examples, [arxiv summarize]().
+
+  _Added: 2023-04-?_
