@@ -29,8 +29,7 @@ _Questions_
     For those langchain stuff is enough, reducing API calls 😉
 
 ~~1. How to circumvent 4k token limit?~~
-
-    [langchain map_reduce or refine](https://python.langchain.com/en/latest/index.html).
+[langchain map_reduce or refine](https://python.langchain.com/en/latest/index.html).
 
 ### 2. PG:Playground at small scale
 
@@ -52,27 +51,33 @@ _Milestone: Visualization tool to map sentence in summaries onto raw dialogs._
 
 1. Play with a small subset of the data (e.g., 10, 100 videos) to get a sense of LLM summarization hyper-params.
 
+_Questions?_
+
+Shall we review [this](#1-langchain-indexes)
+
 ## Inbox
 
-1. [HuggingFace (e.g., T5)](https://huggingface.co/docs/transformers/tasks/summarization).
+### 1. [LangChain Indexes](https://python.langchain.com/en/latest/modules/indexes/getting_started.html)
 
-  _Added: 2023-04-?_
+- [Subtitle files](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/srt.html)
 
-  - [LangChain with HF-T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html)
+  Should we format the dialog as subtitle files?
 
-    _Added: 2023-04-18_
-
-1. [LangChain and LlamaCpp](https://python.langchain.com/en/latest/modules/models/llms/integrations/llamacpp.html)
-
-  _Added: 2023-04-18_
+_Added: 2023-05-05_
 
 1. Try other tools [suggested by PIs](assets/ai-as-pi.md)
 
-  _Added: 2023-04-?_
+    1. [HuggingFace (e.g., T5)](https://huggingface.co/docs/transformers/tasks/summarization).
+
+        - [LangChain with HF-T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html)
+
+    1. [LangChain and LlamaCpp](https://python.langchain.com/en/latest/modules/models/llms/integrations/llamacpp.html)
+
+    _Added: 2023-04-18_
 
 1. Check ChatGPT
 
-  _Added: 2023-04-?_
+    _Added: 2023-04-?_
 
 1. Look into any of the public project of [GPT3 project/plugin universe](). For examples, [arxiv summarize]().
 
