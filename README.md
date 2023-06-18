@@ -8,6 +8,10 @@ LLM Summarization for MovieGPT
 
 _Milestone: Implement class to collect LLM summaries_
 
+1. Fix [summarization notebook](./notebooks/01_summarize.ipynb)
+
+  1. I was using langchain wrong. Easy fix, split the text by token limit (~12k chars).
+
 1. Finish [summarize.py](./src/summarize.py) module.
 
   1. Write dummy unit test in "__main__" using dialog with `1EuwzHn9JEM.csv`
@@ -20,13 +24,7 @@ _Milestone: Implement class to collect LLM summaries_
 
     - steer the length: "with 300 words"
 
-1. Augment dummy unit test with dialogs with less than `4000 chars / 4` chars.
-
 _Questions_
-
-1. Do we need a if-else to handle dialogs <= 4k token limit?
-
-    For those langchain stuff is enough, reducing API calls 😉
 
 ~~1. How to circumvent 4k token limit?~~
 [langchain map_reduce or refine](https://python.langchain.com/en/latest/index.html).
@@ -67,6 +65,10 @@ _Added: 2023-05-05_
 
 1. Try other tools [suggested by PIs](assets/ai-as-pi.md)
 
+    1. Use BART. Default summarization module in HFAgents 😉
+
+        - [LangChain with HF-BART](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html)
+
     1. [HuggingFace (e.g., T5)](https://huggingface.co/docs/transformers/tasks/summarization).
 
         - [LangChain with HF-T5](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html)
@@ -82,3 +84,7 @@ _Added: 2023-05-05_
 1. Look into any of the public project of [GPT3 project/plugin universe](). For examples, [arxiv summarize]().
 
   _Added: 2023-04-?_
+
+1. [Read](https://twitter.com/_ScottCondron/status/1661060684245876762) & enable Wandb
+
+    _Added: 2023-05-24_
